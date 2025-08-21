@@ -57,7 +57,29 @@ def unique_tuples(dict1, dict2):
     return result
 
 
+def sum_of_embedded_numbers(my_string):
+    embedded_number = ""
+    total = 0
+
+    if not my_string:
+        print("The string is empty")
+        return total
+
+    for index, letter in enumerate(my_string):
+        if letter.isdigit():
+            embedded_number = embedded_number + letter
+        else:
+            if embedded_number != "":
+                total += int(embedded_number)
+                embedded_number = ""
+
+        if index == len(my_string) - 1 and embedded_number != "":
+            total += int(embedded_number)
+
+    return total
+
+
 if __name__ == "__main__":
     print(high_freq_characters(""))
-    print(f"Sum of all digits = {sum_embedded_numbers("a123b10")}")
+    print(f"Sum of all digits = {sum_of_embedded_numbers("a10ab100z0")}")
     print(unique_tuples({"a": 1, "b": 2}, {"a": 2, "b": 2, "c": 3}))
