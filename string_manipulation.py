@@ -79,7 +79,20 @@ def sum_of_embedded_numbers(my_string):
     return total
 
 
+def reverse_string(my_string):
+    if not my_string:
+        print("The string is empty")
+        return
+
+    return_string = ""
+    for c in my_string:
+        return_string = c + return_string
+
+    return return_string
+
+
 if __name__ == "__main__":
     print(high_freq_characters(""))
     print(f"Sum of all digits = {sum_of_embedded_numbers("a10ab100z0")}")
     print(unique_tuples({"a": 1, "b": 2}, {"a": 2, "b": 2, "c": 3}))
+    print(f"Reversed String = {reverse_string("Hi My Dear!")}")
