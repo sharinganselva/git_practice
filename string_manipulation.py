@@ -79,7 +79,45 @@ def sum_of_embedded_numbers(my_string):
     return total
 
 
+def reverse_string(my_string):
+    if not my_string:
+        print("The string is empty")
+        return
+
+    return_string = ""
+    for c in my_string:
+        return_string = c + return_string
+
+    return return_string
+
+
+def first_non_repeat(my_string):
+    if not my_string:
+        return None
+    elif len(my_string) == 1:
+        return my_string[0]
+
+    count = 0
+    current_char = my_string[0]
+
+    for i in range(1, len(my_string)):
+        if my_string[i] == current_char:
+            count += 1
+        elif my_string[i] != current_char and count == 0:
+            return current_char
+        elif my_string[i] != current_char and count > 0:
+            current_char = my_string[i]
+            count = 0
+
+        if count == 0 and i >= len(my_string)-1:
+            return current_char
+
+    return None
+
+
 if __name__ == "__main__":
     print(high_freq_characters(""))
     print(f"Sum of all digits = {sum_of_embedded_numbers("a10ab100z0")}")
     print(unique_tuples({"a": 1, "b": 2}, {"a": 2, "b": 2, "c": 3}))
+    print(f"Reversed String = {reverse_string("Hi My Dear!")}")
+    print(f"First Non Repeating Character is = {first_non_repeat("aabbcC")}")
