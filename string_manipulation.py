@@ -115,9 +115,75 @@ def first_non_repeat(my_string):
     return None
 
 
+def is_palindrome(my_string):
+    if not my_string:
+        return False
+
+    start = 0
+    end = len(my_string) - 1
+    while start <= end:
+        if my_string[start] != my_string[end]:
+            return False
+
+        start += 1
+        end -= 1
+
+    return True
+
+
+def is_anagram(str_a, str_b):
+    if not str_a or not str_b:
+        return False
+
+    dict_a = {}
+    for c in str_a:
+        if c in dict_a:
+            dict_a[c] += 1
+        else:
+            dict_a[c] = 1
+
+    for c in str_b:
+        if c not in dict_a:
+            print(f"The character {c} is not present in the dictionary")
+            return False
+        else:
+            dict_a[c] -= 1
+
+    for key, value in dict_a.items():
+        if value != 0:
+            print(f"The character {key} is not the same in both strings")
+            return False
+
+    return True
+
+
+def count_words(my_sentence):
+    """
+    1. This is a simple sentence
+    2. This isn't a simple sentence.
+    3. I have 2 or 3 breaks in a day. 
+    """
+
+    my_list = my_sentence.split(" ")
+    my_dict = {}
+    for item in my_list:
+        if item in my_dict:
+            my_dict[item] += 1
+        else:
+            my_dict[item] = 1
+
+    for k, v in my_dict.items():
+        print(f"The word \"{k}\" appears {v} times")
+
+
 if __name__ == "__main__":
     print(high_freq_characters(""))
     print(f"Sum of all digits = {sum_of_embedded_numbers("a10ab100z0")}")
     print(unique_tuples({"a": 1, "b": 2}, {"a": 2, "b": 2, "c": 3}))
     print(f"Reversed String = {reverse_string("Hi My Dear!")}")
     print(f"First Non Repeating Character is = {first_non_repeat("aabbcC")}")
+    print(f"The given string is a palindrome - {is_palindrome("aba")}")
+    print(
+        f"The given strings are anagrams - {is_anagram("aba12q3we", "qweaba123")}")
+    print(
+        f"The word count = {count_words("word is a word in the sentence a is in my IS")}")
