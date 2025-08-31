@@ -1,0 +1,4 @@
+2025-08-31 10:14:30,486 [INFO] LOG: count_words took 1.3113021850585938e-05 seconds
+2025-08-31 10:15:09,145 [INFO] LOG: count_words took 2.005340814590454 seconds
+2025-08-31 10:20:10,609 [INFO] LOG: count_words took 1.2636184692382812e-05 seconds
+Custom Log: 2025-08-31 10:21:00,029 [INFO] LOG: count_words took 1.3113021850585938e-05 seconds
