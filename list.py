@@ -74,6 +74,18 @@ def consecutive_ones(the_list):
     return max_count
 
 
+def missing_number(n, my_list):
+    if n != len(my_list) + 1:
+        print("Incorrect Inputs")
+        return 0
+    actual_total = 0
+    expected_total = n * (n + 1)/2
+    for i in my_list:
+        actual_total += i
+
+    return int(expected_total - actual_total)
+
+
 if __name__ == "__main__":
     print(f"The duplicates are: {find_duplicates([2, 3, -1, -1, 1, 2, 4, 3])}")
     two_sum([4, 6, 5, 4], 11)
@@ -83,3 +95,4 @@ if __name__ == "__main__":
         f"The moving zeroes in position result = {move_zeroes_in_position([1, 0, 0, 2, 0, 0, 3, 0, 0])}")
     print(
         f"Consecutive Ones = {consecutive_ones([1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0])}")
+    print(f"The missing number is {missing_number(5, [1, 2, 5, 4])}")

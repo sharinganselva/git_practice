@@ -1,3 +1,7 @@
+import time
+from my_decorator import time_taken_decorator
+
+
 def high_freq_characters(my_string):
     print(f"{my_string}")
     # convert the string to dictionary
@@ -157,6 +161,7 @@ def is_anagram(str_a, str_b):
     return True
 
 
+@time_taken_decorator
 def count_words(my_sentence):
     """
     1. This is a simple sentence
