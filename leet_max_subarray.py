@@ -1,4 +1,12 @@
 def max_sub_array(my_array):
+    """_summary_
+
+    Args:
+        my_array (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     current_sum = 0
     max_sum = float('-inf')
 
