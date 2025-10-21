@@ -18,7 +18,7 @@ def validate_brackets(my_string):
         else:
             if q:
                 top = q[-1]
-                if my_dict[top] == my_string[i]:
+                if top in my_dict.keys() and my_dict[top] == my_string[i]:
                     temp = q.pop()
                     print(f"printing popped q: {temp}")
                 else:
@@ -36,5 +36,5 @@ def validate_brackets(my_string):
 
 
 if __name__ == "__main__":
-    my_string = "{(()}{[()]}"
+    my_string = "{}([)])"
     print(f"The string validation: {validate_brackets(my_string)}")
