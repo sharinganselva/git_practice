@@ -207,6 +207,74 @@ class BinarySearchTree:
 
         return -1
 
+    def inorder_traversal(self):
+        node = self.root
+        values = []
+
+        def dfs(node):
+            if node is None:
+                return
+            if node.left:
+                dfs(node.left)
+            values.append(node.value)
+            if node.right:
+                dfs(node.right)
+
+        dfs(node)
+        return values
+
+    def preorder_traversal(self):
+        node = self.root
+        values = []
+
+        def dfs(node):
+            if node is None:
+                return
+            values.append(node.value)
+            if node.left:
+                dfs(node.left)
+            if node.right:
+                dfs(node.right)
+
+        dfs(node)
+        return values
+
+    def postorder_traversal(self):
+        node = self.root
+        values = []
+
+        def dfs(node):
+            if node is None:
+                return
+            if node.left:
+                dfs(node.left)
+            if node.right:
+                dfs(node.right)
+            values.append(node.value)
+
+        dfs(node)
+        return values
+
+    def validate_balanced(self):
+        node = self.root
+
+        def find_height(node):
+            if node is None:
+                return 0
+
+            left_height = find_height(node.left)
+            # if left_height == -1:
+            #     return -1
+
+            right_height = find_height(node.right)
+            # if right_height == -1:
+            #     return -1
+
+            height = max(left_height, right_height) + 1
+            return height
+
+        return find_height(node)
+
 
 if __name__ == "__main__":
     bst = BinarySearchTree()
@@ -237,3 +305,9 @@ if __name__ == "__main__":
     list2 = bst.node_path(13)
     print(
         f"The lowest common ancestors for 17 and 13 is {bst.find_lowest_common_ancestor(list1, list2)}")
+    print(f"Another inorder traversal. Values are = {bst.inorder_traversal()}")
+    print(
+        f"Another preorder traversal. Values are = {bst.preorder_traversal()}")
+    print(
+        f"Another postorder traversal. Values are = {bst.postorder_traversal()}")
+    print(f"Height of the tree is {bst.validate_balanced()}")

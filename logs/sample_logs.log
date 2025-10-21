@@ -1,0 +1,100 @@
+2025-09-23 14:02:11,790 DEBUG [cache-service] - Application stopped gracefully
+2025-09-23 14:02:12,128 DEBUG [cache-service] - Payment processing failed for order_id=11898, reason=Insufficient funds
+2025-09-23 14:02:13,965 ERROR [db-connection] - Response sent: 200 OK (elapsed=488ms)
+2025-09-23 14:02:14,914 WARN  [order-service] - Payment processing failed for order_id=98954, reason=Insufficient funds
+2025-09-23 14:02:15,906 DEBUG [order-service] - Returned 4 orders for customer_id=63197
+2025-09-23 14:02:16,889 DEBUG [cache-service] - Connection pool usage at 81%
+2025-09-23 14:02:17,357 WARN  [payment-service] - Fetching orders for customer_id=51235
+2025-09-23 14:02:18,533 WARN  [auth-service] - Cache miss for key=product:68478, loading from DB
+2025-09-23 14:02:19,471 WARN  [cache-service] - Fetching orders for customer_id=39274
+2025-09-23 14:02:20,350 INFO  [payment-service] - High memory usage detected: 57%
+2025-09-23 14:02:21,814 ERROR [system-monitor] - Response sent: 200 OK (elapsed=175ms)
+2025-09-23 14:02:22,339 WARN  [cache-service] - System health check passed
+2025-09-23 14:02:23,511 INFO  [api-gateway] - Disk space running low: 66% used
+2025-09-23 14:02:24,271 DEBUG [api-gateway] - System health check passed
+2025-09-23 14:02:25,404 WARN  [order-service] - Incoming request: GET /api/v1/orders
+2025-09-23 14:02:26,900 INFO  [system-monitor] - Incoming request: GET /api/v1/orders
+2025-09-23 14:02:27,880 INFO  [payment-service] - Database query executed in 295ms
+2025-09-23 14:02:28,274 WARN  [system-monitor] - Cache miss for key=product:29092, loading from DB
+2025-09-23 14:02:29,857 ERROR [order-service] - Cache miss for key=product:36570, loading from DB
+2025-09-23 14:02:30,542 DEBUG [db-connection] - Unauthorized access attempt detected
+2025-09-23 14:02:31,841 DEBUG [db-connection] - Cache miss for key=product:84933, loading from DB
+2025-09-23 14:02:32,664 ERROR [api-gateway] - Payment processing failed for order_id=19790, reason=Insufficient funds
+2025-09-23 14:02:33,735 DEBUG [payment-service] - High memory usage detected: 53%
+2025-09-23 14:02:34,135 INFO  [main] - Application started successfully
+2025-09-23 14:02:35,726 INFO  [main] - New user registration: user_id=56823
+2025-09-23 14:02:36,907 ERROR [system-monitor] - Unauthorized access attempt detected
+2025-09-23 14:02:37,280 DEBUG [system-monitor] - Order placed successfully order_id=75205
+2025-09-23 14:02:38,514 DEBUG [api-gateway] - Validating user credentials for user=john.doe
+2025-09-23 14:02:39,306 DEBUG [auth-service] - Application shutdown initiated
+2025-09-23 14:02:40,183 WARN  [api-gateway] - Database query executed in 434ms
+2025-09-23 14:02:41,842 ERROR [payment-service] - System health check passed
+2025-09-23 14:02:42,427 INFO  [db-connection] - Disk space running low: 57% used
+2025-09-23 14:02:43,743 ERROR [cache-service] - Database query executed in 89ms
+2025-09-23 14:02:44,724 DEBUG [api-gateway] - Application stopped gracefully
+2025-09-23 14:02:45,935 ERROR [main] - New user registration: user_id=72496
+2025-09-23 14:02:46,481 WARN  [db-connection] - System health check passed
+2025-09-23 14:02:47,392 WARN  [order-service] - Payment processing failed for order_id=63070, reason=Insufficient funds
+2025-09-23 14:02:48,755 DEBUG [api-gateway] - Order placed successfully order_id=75485
+2025-09-23 14:02:49,972 INFO  [main] - Payment processing failed for order_id=17635, reason=Insufficient funds
+2025-09-23 14:02:50,774 INFO  [system-monitor] - Connection pool usage at 77%
+2025-09-23 14:02:51,189 ERROR [payment-service] - Unauthorized access attempt detected
+2025-09-23 14:02:52,226 DEBUG [order-service] - Cache miss for key=product:37335, loading from DB
+2025-09-23 14:02:53,403 DEBUG [auth-service] - Application started successfully
+2025-09-23 14:02:54,273 WARN  [payment-service] - Application shutdown initiated
+2025-09-23 14:02:55,240 INFO  [payment-service] - Database query executed in 256ms
+2025-09-23 14:02:56,710 WARN  [auth-service] - Payment processing failed for order_id=4196, reason=Insufficient funds
+2025-09-23 14:02:57,798 WARN  [cache-service] - Application shutdown initiated
+2025-09-23 14:02:58,659 ERROR [system-monitor] - Fetching orders for customer_id=82469
+2025-09-23 14:02:59,322 DEBUG [cache-service] - Fetching orders for customer_id=96618
+2025-09-23 14:03:00,314 INFO  [api-gateway] - Returned 14 orders for customer_id=36688
+2025-09-23 14:03:01,250 ERROR [cache-service] - Response sent: 200 OK (elapsed=88ms)
+2025-09-23 14:03:02,919 INFO  [main] - Returned 2 orders for customer_id=53886
+2025-09-23 14:03:03,129 DEBUG [system-monitor] - Fetching orders for customer_id=73522
+2025-09-23 14:03:04,984 ERROR [db-connection] - High memory usage detected: 80%
+2025-09-23 14:03:05,481 INFO  [auth-service] - Response sent: 200 OK (elapsed=288ms)
+2025-09-23 14:03:06,252 INFO  [cache-service] - Incoming request: GET /api/v1/orders
+2025-09-23 14:03:07,466 WARN  [cache-service] - Connection pool usage at 82%
+2025-09-23 14:03:08,186 ERROR [system-monitor] - Database query executed in 161ms
+2025-09-23 14:03:09,904 ERROR [cache-service] - High memory usage detected: 66%
+2025-09-23 14:03:10,411 INFO  [main] - Disk space running low: 61% used
+2025-09-23 14:03:11,142 WARN  [payment-service] - Failed login attempt for user=john.doe (invalid password)
+2025-09-23 14:03:12,397 ERROR [payment-service] - Payment processing failed for order_id=6952, reason=Insufficient funds
+2025-09-23 14:03:13,366 DEBUG [db-connection] - Application stopped gracefully
+2025-09-23 14:03:14,389 DEBUG [main] - High memory usage detected: 75%
+2025-09-23 14:03:15,688 DEBUG [main] - System health check passed
+2025-09-23 14:03:16,693 DEBUG [main] - Disk space running low: 89% used
+2025-09-23 14:03:17,365 INFO  [cache-service] - System health check passed
+2025-09-23 14:03:18,377 ERROR [db-connection] - Database query executed in 462ms
+2025-09-23 14:03:19,234 DEBUG [payment-service] - Application started successfully
+2025-09-23 14:03:20,680 INFO  [payment-service] - Order placed successfully order_id=86260
+2025-09-23 14:03:21,102 INFO  [payment-service] - Cache miss for key=product:22521, loading from DB
+2025-09-23 14:03:22,529 DEBUG [db-connection] - Fetching orders for customer_id=52770
+2025-09-23 14:03:23,437 INFO  [main] - Connection pool usage at 78%
+2025-09-23 14:03:24,935 WARN  [system-monitor] - Application shutdown initiated
+2025-09-23 14:03:25,646 WARN  [order-service] - Application shutdown initiated
+2025-09-23 14:03:26,548 WARN  [system-monitor] - Disk space running low: 68% used
+2025-09-23 14:03:27,158 INFO  [payment-service] - Fetching orders for customer_id=71589
+2025-09-23 14:03:28,678 DEBUG [order-service] - Database query executed in 388ms
+2025-09-23 14:03:29,275 ERROR [payment-service] - Response sent: 200 OK (elapsed=433ms)
+2025-09-23 14:03:30,983 DEBUG [db-connection] - Returned 2 orders for customer_id=98711
+2025-09-23 14:03:31,381 ERROR [auth-service] - Connection pool usage at 60%
+2025-09-23 14:03:32,657 ERROR [cache-service] - Cache miss for key=product:69069, loading from DB
+2025-09-23 14:03:33,735 INFO  [api-gateway] - Incoming request: GET /api/v1/orders
+2025-09-23 14:03:34,240 ERROR [main] - Application stopped gracefully
+2025-09-23 14:03:35,899 WARN  [db-connection] - Application shutdown initiated
+2025-09-23 14:03:36,528 WARN  [main] - Cache miss for key=product:42300, loading from DB
+2025-09-23 14:03:37,304 WARN  [cache-service] - Token expired for session_id=33838
+2025-09-23 14:03:38,394 DEBUG [api-gateway] - Incoming request: GET /api/v1/orders
+2025-09-23 14:03:39,904 WARN  [system-monitor] - Connection pool usage at 65%
+2025-09-23 14:03:40,469 WARN  [db-connection] - High memory usage detected: 80%
+2025-09-23 14:03:41,327 INFO  [auth-service] - Disk space running low: 92% used
+2025-09-23 14:03:42,536 ERROR [cache-service] - High memory usage detected: 76%
+2025-09-23 14:03:43,882 ERROR [system-monitor] - Unauthorized access attempt detected
+2025-09-23 14:03:44,987 WARN  [cache-service] - High memory usage detected: 62%
+2025-09-23 14:03:45,482 WARN  [api-gateway] - High memory usage detected: 89%
+2025-09-23 14:03:46,166 ERROR [db-connection] - Token expired for session_id=62443
+2025-09-23 14:03:47,623 DEBUG [api-gateway] - Response sent: 200 OK (elapsed=89ms)
+2025-09-23 14:03:48,347 ERROR [order-service] - Application shutdown initiated
+2025-09-23 14:03:49,486 ERROR [cache-service] - Incoming request: GET /api/v1/orders
+2025-09-23 14:03:50,867 ERROR [system-monitor] - Payment processing failed for order_id=7606, reason=Insufficient funds
